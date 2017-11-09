@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ES-MX">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, Initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/estilo.css">
+
+	<title>Login HTML,JS,PHP y MySQL </title>
+</head>
+<body>
+
+	<header class="card-header text-center">
+		<h1><strong>Ejemplo Login</strong></h1>
+		<h5>HTML, JS, PHP y MySQL</h5>		
+	</header>
+	<section class="container">
+			<div class="row justify-content-center row-login">
+				<div class="col-5 form_login bg-light">
+					<div class="row bg-primary text-white justify-content-center"><h3 class="text-center">Iniciar Sesión</h3></div>
+					<div id="warning-div" class="row bg-warning justify-content-center display-none">
+						<small id="warning-text" class="text-center">			
+						</small>
+					</div>	
+					<div class="">
+						<form action="">
+							<div class="form-group">
+								<label for="login">Usuario:</label>
+								<input type="text" name="txtUsuario" class="form-control" placeholder="Usuario" id="loginUsuario">
+							</div>
+							<div class="form-group">
+								<label for="login_con">Contraseña:</label>
+								<input type="text" name="txtContraseña" class="form-control" placeholder="Contraseña" id="loginContrasena">
+							</div>
+							<div class="form-group">
+								<button type="button" class="btn btn-primary" id="btnAceptar" onclick="login()">Aceptar</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	<footer class="card-footer bg-dark text-white text-center ">Copyright 2017</footer>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
+	<script src="js/jquery-3.2.1.js"></script>	
+	<script src="js/ajax/ajaxlogin.js"></script>
+</body>
+</html>
